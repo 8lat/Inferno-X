@@ -1,28 +1,7 @@
 local whitelist = {
-		"Reset34136000", -- Co-Founder
-		"Iceelus", -- Founder
-		"Vephinox", -- Head of Administration
-		"QuantumPsycheL", -- Alt
-		"bygbyg" -- Community Manager
-	};
-	
-	local player = game:GetService("Players").LocalPlayer
-
-	whitelistcheck.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/alyssagithub/Inferno-X-Whitelist/main/Whitelist?token=ASU7XR464PFM5ZURQZVM5KTBIJWEK"))()
-		if table.find(whitelist, player.Name) then
-			status.Text = "Status: Whitelisted, opening..."
-			wait(3)
-			whitelistpage.Visible = false
-			home.Visible = true
-			homeopen.Visible = true
-			mischubopen.Visible = true
-			settingsopen.Visible = true
-			gamehubopen.Visible = true
-			changelogopen.Visible = true
-		else
-			status.Text = "Status: Non-Whitelisted"
-			wait(3)
-			status.Text = ""
-		end
-	end)
+	"Reset34136000", -- Co-Founder
+	"Iceelus", -- Founder
+	"Vephinox", -- Head of Administration
+	"QuantumPsycheL", -- Alt
+	"bygbyg" -- Community Manager
+};
