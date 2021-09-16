@@ -1,1 +1,1598 @@
-print("In here the obfuscated Inferno X script will be listed.")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local infernox = Instance.new("ScreenGui")
+local mainframe = Instance.new("Frame")
+local titlebar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local version = Instance.new("TextLabel")
+local sidebar = Instance.new("Frame")
+local homeopen = Instance.new("TextButton")
+local mischubopen = Instance.new("TextButton")
+local settingsopen = Instance.new("TextButton")
+local gamehubopen = Instance.new("TextButton")
+local changelogopen = Instance.new("TextButton")
+local whitelistpage = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local checkwhitelist = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local status = Instance.new("TextLabel")
+local homepage = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local settingspage = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local changelogpage = Instance.new("Frame")
+local changelogtitle = Instance.new("TextLabel")
+local log1 = Instance.new("TextLabel")
+local log2 = Instance.new("TextLabel")
+local log3 = Instance.new("TextLabel")
+local log4 = Instance.new("TextLabel")
+local log5 = Instance.new("TextLabel")
+local log6 = Instance.new("TextLabel")
+local log7 = Instance.new("TextLabel")
+local creditstitle = Instance.new("TextLabel")
+local credit1 = Instance.new("TextLabel")
+local cedit2 = Instance.new("TextLabel")
+local scriptinfopage = Instance.new("Frame")
+local scriptname = Instance.new("TextLabel")
+local zoomclick = Instance.new("TextLabel")
+local scriptpicture = Instance.new("ImageButton")
+local executebutton = Instance.new("TextButton")
+local scriptinfo = Instance.new("TextLabel")
+local rating = Instance.new("TextLabel")
+local scriptpicturezoomed = Instance.new("ImageButton")
+local background = Instance.new("TextLabel")
+local gamehubpage = Instance.new("Frame")
+local ButtonHolder = Instance.new("ScrollingFrame")
+local testbutton = Instance.new("TextButton")
+local testbutton_2 = Instance.new("TextButton")
+local testbutton_3 = Instance.new("TextButton")
+local testbutton_4 = Instance.new("TextButton")
+local testbutton_5 = Instance.new("TextButton")
+local testbutton_6 = Instance.new("TextButton")
+local testbutton_7 = Instance.new("TextButton")
+local testbutton_8 = Instance.new("TextButton")
+local testbutton_9 = Instance.new("TextButton")
+local testbutton_10 = Instance.new("TextButton")
+local testbutton_11 = Instance.new("TextButton")
+local testbutton_12 = Instance.new("TextButton")
+local testbutton_13 = Instance.new("TextButton")
+local testbutton_14 = Instance.new("TextButton")
+local testbutton_15 = Instance.new("TextButton")
+local testbutton_16 = Instance.new("TextButton")
+local button1 = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Selections = Instance.new("Frame")
+local mostplayed = Instance.new("TextButton")
+local mostpopular = Instance.new("TextButton")
+local mostrating = Instance.new("TextButton")
+local mostused = Instance.new("TextButton")
+local next = Instance.new("ImageButton")
+local back = Instance.new("ImageButton")
+local testing1 = Instance.new("TextButton")
+local testing2 = Instance.new("TextButton")
+local testing3 = Instance.new("TextButton")
+local testing4 = Instance.new("TextButton")
+local mischubpage = Instance.new("Frame")
+local ButtonHolder_2 = Instance.new("ScrollingFrame")
+local testbutton_17 = Instance.new("TextButton")
+local testbutton_18 = Instance.new("TextButton")
+local testbutton_19 = Instance.new("TextButton")
+local testbutton_20 = Instance.new("TextButton")
+local testbutton_21 = Instance.new("TextButton")
+local testbutton_22 = Instance.new("TextButton")
+local testbutton_23 = Instance.new("TextButton")
+local testbutton_24 = Instance.new("TextButton")
+local testbutton_25 = Instance.new("TextButton")
+local testbutton_26 = Instance.new("TextButton")
+local testbutton_27 = Instance.new("TextButton")
+local testbutton_28 = Instance.new("TextButton")
+local testbutton_29 = Instance.new("TextButton")
+local testbutton_30 = Instance.new("TextButton")
+local testbutton_31 = Instance.new("TextButton")
+local testbutton_32 = Instance.new("TextButton")
+local button1_2 = Instance.new("TextButton")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local Selections_2 = Instance.new("Frame")
+local testop1 = Instance.new("TextButton")
+local testop2 = Instance.new("TextButton")
+local testop3 = Instance.new("TextButton")
+local testop4 = Instance.new("TextButton")
+local next_2 = Instance.new("ImageButton")
+local back_2 = Instance.new("ImageButton")
+local testing1_2 = Instance.new("TextButton")
+local testing2_2 = Instance.new("TextButton")
+local testing3_2 = Instance.new("TextButton")
+local testing4_2 = Instance.new("TextButton")
+
+--Properties:
+
+infernox.Name = "infernox"
+infernox.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+infernox.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+mainframe.Name = "mainframe"
+mainframe.Parent = infernox
+mainframe.Active = true
+mainframe.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+mainframe.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mainframe.Position = UDim2.new(0.191973984, 0, 0.243550837, 0)
+mainframe.Size = UDim2.new(0, 568, 0, 337)
+mainframe.Visible = false
+
+titlebar.Name = "titlebar"
+titlebar.Parent = mainframe
+titlebar.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+titlebar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+titlebar.Position = UDim2.new(-0.00168803043, 0, 0, 0)
+titlebar.Size = UDim2.new(0, 568, 0, 28)
+
+TextLabel.Parent = titlebar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0633802786, 0, 0.137931272, 0)
+TextLabel.Size = UDim2.new(0, 67, 0, 20)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "Inferno X"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 1.000
+TextLabel.TextWrapped = true
+
+ImageLabel.Parent = titlebar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(0, 29, 0, 29)
+ImageLabel.Image = "rbxassetid://7379627887"
+
+version.Name = "version"
+version.Parent = titlebar
+version.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+version.BorderColor3 = Color3.fromRGB(255, 255, 255)
+version.Position = UDim2.new(0.689932704, 0, 0, 0)
+version.Size = UDim2.new(0, 176, 0, 28)
+version.Font = Enum.Font.Nunito
+version.Text = "Pre-Alpha v1.0.0"
+version.TextColor3 = Color3.fromRGB(255, 255, 255)
+version.TextScaled = true
+version.TextSize = 1.000
+version.TextWrapped = true
+
+sidebar.Name = "sidebar"
+sidebar.Parent = mainframe
+sidebar.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+sidebar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+sidebar.Position = UDim2.new(-0.00168800354, 0, 0, 0)
+sidebar.Size = UDim2.new(0, 103, 0, 337)
+sidebar.ZIndex = 0
+
+homeopen.Name = "homeopen"
+homeopen.Parent = sidebar
+homeopen.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+homeopen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+homeopen.BorderSizePixel = 0
+homeopen.Position = UDim2.new(-1.48143585e-07, 0, 0.0860534161, 0)
+homeopen.Size = UDim2.new(0, 103, 0, 21)
+homeopen.Font = Enum.Font.Nunito
+homeopen.Text = "Home"
+homeopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+homeopen.TextScaled = true
+homeopen.TextSize = 14.000
+homeopen.TextWrapped = true
+
+mischubopen.Name = "mischubopen"
+mischubopen.Parent = sidebar
+mischubopen.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+mischubopen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mischubopen.BorderSizePixel = 0
+mischubopen.Position = UDim2.new(-1.48143585e-07, 0, 0.166172117, 0)
+mischubopen.Size = UDim2.new(0, 103, 0, 21)
+mischubopen.Font = Enum.Font.Nunito
+mischubopen.Text = "Misc Hub"
+mischubopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+mischubopen.TextScaled = true
+mischubopen.TextSize = 14.000
+mischubopen.TextWrapped = true
+
+settingsopen.Name = "settingsopen"
+settingsopen.Parent = sidebar
+settingsopen.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+settingsopen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+settingsopen.BorderSizePixel = 0
+settingsopen.Position = UDim2.new(-1.48143585e-07, 0, 0.329376787, 0)
+settingsopen.Size = UDim2.new(0, 103, 0, 21)
+settingsopen.Font = Enum.Font.Nunito
+settingsopen.Text = "Settings"
+settingsopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+settingsopen.TextScaled = true
+settingsopen.TextSize = 14.000
+settingsopen.TextWrapped = true
+
+gamehubopen.Name = "gamehubopen"
+gamehubopen.Parent = sidebar
+gamehubopen.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+gamehubopen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+gamehubopen.BorderSizePixel = 0
+gamehubopen.Position = UDim2.new(-1.48143585e-07, 0, 0.246290788, 0)
+gamehubopen.Size = UDim2.new(0, 103, 0, 21)
+gamehubopen.Font = Enum.Font.Nunito
+gamehubopen.Text = "Game Hub"
+gamehubopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+gamehubopen.TextScaled = true
+gamehubopen.TextSize = 14.000
+gamehubopen.TextWrapped = true
+
+changelogopen.Name = "changelogopen"
+changelogopen.Parent = sidebar
+changelogopen.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+changelogopen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+changelogopen.BorderSizePixel = 0
+changelogopen.Position = UDim2.new(-1.48143585e-07, 0, 0.93768537, 0)
+changelogopen.Size = UDim2.new(0, 103, 0, 21)
+changelogopen.Font = Enum.Font.Nunito
+changelogopen.Text = "Changelog"
+changelogopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+changelogopen.TextScaled = true
+changelogopen.TextSize = 14.000
+changelogopen.TextWrapped = true
+
+whitelistpage.Name = "whitelistpage"
+whitelistpage.Parent = mainframe
+whitelistpage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+whitelistpage.BackgroundTransparency = 1.000
+whitelistpage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+whitelistpage.Position = UDim2.new(0.180000007, 0, 0.0860534161, 0)
+whitelistpage.Size = UDim2.new(0, 465, 0, 308)
+whitelistpage.Visible = false
+
+TextLabel_2.Parent = whitelistpage
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.197292924, 0, 0.00299796462, 0)
+TextLabel_2.Size = UDim2.new(0, 253, 0, 80)
+TextLabel_2.Font = Enum.Font.Nunito
+TextLabel_2.Text = "Whitelist Checker"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 1.000
+TextLabel_2.TextWrapped = true
+
+checkwhitelist.Name = "checkwhitelist"
+checkwhitelist.Parent = whitelistpage
+checkwhitelist.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+checkwhitelist.BorderColor3 = Color3.fromRGB(255, 255, 255)
+checkwhitelist.Position = UDim2.new(0.253763437, 0, 0.415584385, 0)
+checkwhitelist.Size = UDim2.new(0, 200, 0, 50)
+checkwhitelist.Font = Enum.Font.Nunito
+checkwhitelist.Text = "Check Whitelist"
+checkwhitelist.TextColor3 = Color3.fromRGB(255, 255, 255)
+checkwhitelist.TextScaled = true
+checkwhitelist.TextSize = 14.000
+checkwhitelist.TextWrapped = true
+
+TextLabel_3.Parent = whitelistpage
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.00215053838, 0, 0.925075889, 0)
+TextLabel_3.Size = UDim2.new(0, 201, 0, 23)
+TextLabel_3.Font = Enum.Font.Nunito
+TextLabel_3.Text = "discord.gg/CDU5EYHUau"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 1.000
+TextLabel_3.TextWrapped = true
+
+status.Name = "status"
+status.Parent = whitelistpage
+status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+status.BackgroundTransparency = 1.000
+status.Position = UDim2.new(0.253763437, 0, 0.577673376, 0)
+status.Size = UDim2.new(0, 201, 0, 47)
+status.Font = Enum.Font.Nunito
+status.Text = ""
+status.TextColor3 = Color3.fromRGB(255, 255, 255)
+status.TextScaled = true
+status.TextSize = 1.000
+status.TextWrapped = true
+
+homepage.Name = "homepage"
+homepage.Parent = mainframe
+homepage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+homepage.BackgroundTransparency = 1.000
+homepage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+homepage.Position = UDim2.new(0.179649994, 0, 0.0860534161, 0)
+homepage.Size = UDim2.new(0, 465, 0, 307)
+homepage.Visible = false
+
+TextLabel_4.Parent = homepage
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(-0.00270707323, 0, -0.00325230905, 0)
+TextLabel_4.Size = UDim2.new(0, 466, 0, 29)
+TextLabel_4.Font = Enum.Font.Nunito
+TextLabel_4.Text = "Welcome to Inferno X!"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 1.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = homepage
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, 0.091210179, 0)
+TextLabel_5.Size = UDim2.new(0, 464, 0, 241)
+TextLabel_5.Font = Enum.Font.Nunito
+TextLabel_5.Text = "Inferno X is a massive Script Hub, think of it as a in-game mini version of robloxscripts.com, allowing people to select a vast amount of games/scripts. There are 2 sections to the Script Hub, the Game Hub and the Misc Hub. The Game Hub features a large list of games to choose from, once you pick a game there will be multiple scripts from that game, as you choose one of the scripts inside of a game, there will be a popup on the side giving a brief explanation on the script. The Misc Hub will feature misc. (mis·cel·la·ne·ous) scripts, that work for multiple games, such as ESP, Sword Fighting scripts, Gun Fighting scripts, universal aimbot/aimlock, or even scripts that let you use commands such as Infinite Yield. Explanations on the script will also be given when clicked on. Enjoy Inferno X!"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 1.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = homepage
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(-0.00430107536, 0, 0.876226485, 0)
+TextLabel_6.Size = UDim2.new(0, 464, 0, 38)
+TextLabel_6.Font = Enum.Font.Nunito
+TextLabel_6.Text = "Discord Server Invite: https://discord.gg/CDU5EYHUau"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 1.000
+TextLabel_6.TextWrapped = true
+
+ImageLabel_2.Parent = mainframe
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.317991823, 0, 0.085763447, 0)
+ImageLabel_2.Size = UDim2.new(0, 307, 0, 307)
+ImageLabel_2.ZIndex = 0
+ImageLabel_2.Image = "rbxassetid://7379627887"
+ImageLabel_2.ImageTransparency = 0.800
+
+settingspage.Name = "settingspage"
+settingspage.Parent = mainframe
+settingspage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+settingspage.BackgroundTransparency = 1.000
+settingspage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+settingspage.Position = UDim2.new(0.179649994, 0, 0.0860534161, 0)
+settingspage.Size = UDim2.new(0, 465, 0, 307)
+settingspage.Visible = false
+
+TextLabel_7.Parent = settingspage
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0526276603, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 414, 0, 104)
+TextLabel_7.Font = Enum.Font.Nunito
+TextLabel_7.Text = "Settings Coming Soon!"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 1.000
+TextLabel_7.TextWrapped = true
+
+changelogpage.Name = "changelogpage"
+changelogpage.Parent = mainframe
+changelogpage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+changelogpage.BackgroundTransparency = 1.000
+changelogpage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+changelogpage.Position = UDim2.new(0.179649994, 0, 0.0860534161, 0)
+changelogpage.Size = UDim2.new(0, 465, 0, 307)
+changelogpage.Visible = false
+
+changelogtitle.Name = "changelogtitle"
+changelogtitle.Parent = changelogpage
+changelogtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelogtitle.BackgroundTransparency = 1.000
+changelogtitle.Position = UDim2.new(-0.000556535611, 0, -0.00650963793, 0)
+changelogtitle.Size = UDim2.new(0, 466, 0, 29)
+changelogtitle.Font = Enum.Font.Nunito
+changelogtitle.Text = "Changelog"
+changelogtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+changelogtitle.TextScaled = true
+changelogtitle.TextSize = 1.000
+changelogtitle.TextWrapped = true
+
+log1.Name = "log1"
+log1.Parent = changelogpage
+log1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log1.BackgroundTransparency = 1.000
+log1.Position = UDim2.new(0.311271429, 0, 0.107496873, 0)
+log1.Size = UDim2.new(0, 176, 0, 29)
+log1.Font = Enum.Font.Nunito
+log1.Text = "1. Fixed Misc Hub"
+log1.TextColor3 = Color3.fromRGB(255, 255, 255)
+log1.TextScaled = true
+log1.TextSize = 1.000
+log1.TextWrapped = true
+
+log2.Name = "log2"
+log2.Parent = changelogpage
+log2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log2.BackgroundTransparency = 1.000
+log2.Position = UDim2.new(0.309120893, 0, 0.224760711, 0)
+log2.Size = UDim2.new(0, 176, 0, 29)
+log2.Font = Enum.Font.Nunito
+log2.Text = "2. Fixed Game Hub"
+log2.TextColor3 = Color3.fromRGB(255, 255, 255)
+log2.TextScaled = true
+log2.TextSize = 1.000
+log2.TextWrapped = true
+
+log3.Name = "log3"
+log3.Parent = changelogpage
+log3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log3.BackgroundTransparency = 1.000
+log3.Position = UDim2.new(0.309120893, 0, 0.351796538, 0)
+log3.Size = UDim2.new(0, 176, 0, 29)
+log3.Font = Enum.Font.Nunito
+log3.Text = "3. Settings coming soon"
+log3.TextColor3 = Color3.fromRGB(255, 255, 255)
+log3.TextScaled = true
+log3.TextSize = 1.000
+log3.TextWrapped = true
+
+log4.Name = "log4"
+log4.Parent = changelogpage
+log4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log4.BackgroundTransparency = 1.000
+log4.Position = UDim2.new(0.309120893, 0, 0.472317696, 0)
+log4.Size = UDim2.new(0, 176, 0, 29)
+log4.Font = Enum.Font.Nunito
+log4.Text = "4. Filled Changelog"
+log4.TextColor3 = Color3.fromRGB(255, 255, 255)
+log4.TextScaled = true
+log4.TextSize = 1.000
+log4.TextWrapped = true
+
+log5.Name = "log5"
+log5.Parent = changelogpage
+log5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log5.BackgroundTransparency = 1.000
+log5.Position = UDim2.new(0.309120893, 0, 0.586324215, 0)
+log5.Size = UDim2.new(0, 176, 0, 29)
+log5.Font = Enum.Font.Nunito
+log5.Text = "5. Finished Home Page"
+log5.TextColor3 = Color3.fromRGB(255, 255, 255)
+log5.TextScaled = true
+log5.TextSize = 1.000
+log5.TextWrapped = true
+
+log6.Name = "log6"
+log6.Parent = changelogpage
+log6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log6.BackgroundTransparency = 1.000
+log6.Position = UDim2.new(0.309120893, 0, 0.700330734, 0)
+log6.Size = UDim2.new(0, 176, 0, 29)
+log6.Font = Enum.Font.Nunito
+log6.Text = "6. Added some scripts into the Hubs"
+log6.TextColor3 = Color3.fromRGB(255, 255, 255)
+log6.TextScaled = true
+log6.TextSize = 1.000
+log6.TextWrapped = true
+
+log7.Name = "log7"
+log7.Parent = changelogpage
+log7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+log7.BackgroundTransparency = 1.000
+log7.Position = UDim2.new(0.309120893, 0, 0.811079919, 0)
+log7.Size = UDim2.new(0, 176, 0, 29)
+log7.Font = Enum.Font.Nunito
+log7.Text = "7. And finally, released Inferno X"
+log7.TextColor3 = Color3.fromRGB(255, 255, 255)
+log7.TextScaled = true
+log7.TextSize = 1.000
+log7.TextWrapped = true
+
+creditstitle.Name = "creditstitle"
+creditstitle.Parent = changelogpage
+creditstitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+creditstitle.BackgroundTransparency = 1.000
+creditstitle.Position = UDim2.new(-0.0822769701, 0, 0.00326234102, 0)
+creditstitle.Size = UDim2.new(0, 176, 0, 29)
+creditstitle.Font = Enum.Font.Nunito
+creditstitle.Text = "Credits:"
+creditstitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+creditstitle.TextScaled = true
+creditstitle.TextSize = 1.000
+creditstitle.TextWrapped = true
+
+credit1.Name = "credit1"
+credit1.Parent = changelogpage
+credit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credit1.BackgroundTransparency = 1.000
+credit1.Position = UDim2.new(-0.000556535611, 0, 0.104239546, 0)
+credit1.Size = UDim2.new(0, 109, 0, 84)
+credit1.Font = Enum.Font.Nunito
+credit1.Text = "icee#4886 - founder, main scripter/gui maker"
+credit1.TextColor3 = Color3.fromRGB(255, 255, 255)
+credit1.TextScaled = true
+credit1.TextSize = 1.000
+credit1.TextWrapped = true
+
+cedit2.Name = "cedit2"
+cedit2.Parent = changelogpage
+cedit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cedit2.BackgroundTransparency = 1.000
+cedit2.Position = UDim2.new(-0.000556535611, 0, 0.4071711, 0)
+cedit2.Size = UDim2.new(0, 109, 0, 84)
+cedit2.Font = Enum.Font.Nunito
+cedit2.Text = "travis#7950 - co-founder, scripter/gui assistance"
+cedit2.TextColor3 = Color3.fromRGB(255, 255, 255)
+cedit2.TextScaled = true
+cedit2.TextSize = 1.000
+cedit2.TextWrapped = true
+
+scriptinfopage.Name = "scriptinfopage"
+scriptinfopage.Parent = mainframe
+scriptinfopage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+scriptinfopage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+scriptinfopage.Position = UDim2.new(1.00030136, 0, 0, 0)
+scriptinfopage.Size = UDim2.new(0, 144, 0, 337)
+scriptinfopage.Visible = false
+
+scriptname.Name = "scriptname"
+scriptname.Parent = scriptinfopage
+scriptname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptname.BackgroundTransparency = 1.000
+scriptname.Position = UDim2.new(-0.112339675, 0, 0.00957402587, 0)
+scriptname.Size = UDim2.new(0, 176, 0, 29)
+scriptname.Font = Enum.Font.Nunito
+scriptname.Text = "Script Name"
+scriptname.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptname.TextScaled = true
+scriptname.TextSize = 1.000
+scriptname.TextWrapped = true
+
+zoomclick.Name = "zoomclick"
+zoomclick.Parent = scriptinfopage
+zoomclick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+zoomclick.BackgroundTransparency = 1.000
+zoomclick.Position = UDim2.new(-0.119284317, 0, 0.430939019, 0)
+zoomclick.Size = UDim2.new(0, 176, 0, 17)
+zoomclick.Font = Enum.Font.Nunito
+zoomclick.Text = "^ Click to zoom in ^"
+zoomclick.TextColor3 = Color3.fromRGB(255, 255, 255)
+zoomclick.TextScaled = true
+zoomclick.TextSize = 1.000
+zoomclick.TextWrapped = true
+
+scriptpicture.Name = "scriptpicture"
+scriptpicture.Parent = scriptinfopage
+scriptpicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptpicture.Position = UDim2.new(0.145833328, 0, 0.12462908, 0)
+scriptpicture.Size = UDim2.new(0, 100, 0, 100)
+scriptpicture.Image = "http://www.roblox.com/asset/?id=188201801"
+
+executebutton.Name = "executebutton"
+executebutton.Parent = scriptinfopage
+executebutton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+executebutton.BorderColor3 = Color3.fromRGB(99, 99, 99)
+executebutton.Position = UDim2.new(0.0918011218, 0, 0.850450456, 0)
+executebutton.Size = UDim2.new(0, 117, 0, 42)
+executebutton.Font = Enum.Font.Nunito
+executebutton.Text = "Execute"
+executebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+executebutton.TextScaled = true
+executebutton.TextSize = 14.000
+executebutton.TextWrapped = true
+
+scriptinfo.Name = "scriptinfo"
+scriptinfo.Parent = scriptinfopage
+scriptinfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptinfo.BackgroundTransparency = 1.000
+scriptinfo.Position = UDim2.new(0, 0, 0.534796536, 0)
+scriptinfo.Size = UDim2.new(0, 144, 0, 106)
+scriptinfo.Font = Enum.Font.Nunito
+scriptinfo.Text = "Summarize Script"
+scriptinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptinfo.TextScaled = true
+scriptinfo.TextSize = 1.000
+scriptinfo.TextWrapped = true
+
+rating.Name = "rating"
+rating.Parent = scriptinfopage
+rating.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rating.BackgroundTransparency = 1.000
+rating.Position = UDim2.new(-0.112339869, 0, 0.508090317, 0)
+rating.Size = UDim2.new(0, 176, 0, 20)
+rating.Font = Enum.Font.Nunito
+rating.Text = "Script rating: # Stars"
+rating.TextColor3 = Color3.fromRGB(255, 255, 255)
+rating.TextScaled = true
+rating.TextSize = 1.000
+rating.TextWrapped = true
+
+scriptpicturezoomed.Name = "scriptpicturezoomed"
+scriptpicturezoomed.Parent = scriptinfopage
+scriptpicturezoomed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptpicturezoomed.Position = UDim2.new(-2.96527791, 0, -0.109792285, 0)
+scriptpicturezoomed.Size = UDim2.new(0, 410, 0, 410)
+scriptpicturezoomed.Visible = false
+scriptpicturezoomed.ZIndex = 3
+scriptpicturezoomed.Image = "http://www.roblox.com/asset/?id=188201801"
+
+background.Name = "background"
+background.Parent = scriptinfopage
+background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+background.BackgroundTransparency = 0.100
+background.Position = UDim2.new(-5.44988871, 0, -0.791614234, 0)
+background.Size = UDim2.new(0, 10000, 0, 10000)
+background.Visible = false
+background.ZIndex = 2
+background.Font = Enum.Font.SourceSans
+background.Text = ""
+background.TextColor3 = Color3.fromRGB(0, 0, 0)
+background.TextSize = 14.000
+
+gamehubpage.Name = "gamehubpage"
+gamehubpage.Parent = mainframe
+gamehubpage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+gamehubpage.BackgroundTransparency = 1.000
+gamehubpage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+gamehubpage.Position = UDim2.new(0.179649994, 0, 0.0860534161, 0)
+gamehubpage.Size = UDim2.new(0, 465, 0, 307)
+gamehubpage.Visible = false
+gamehubpage.ZIndex = 0
+
+ButtonHolder.Name = "ButtonHolder"
+ButtonHolder.Parent = gamehubpage
+ButtonHolder.Active = true
+ButtonHolder.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ButtonHolder.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ButtonHolder.Position = UDim2.new(0, 0, 0.107491858, 0)
+ButtonHolder.Size = UDim2.new(0, 465, 0, 275)
+
+testbutton.Name = "testbutton"
+testbutton.Parent = ButtonHolder
+testbutton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton.Position = UDim2.new(0.0301075131, 0, 0.292344123, 0)
+testbutton.Size = UDim2.new(0, 86, 0, 37)
+testbutton.Font = Enum.Font.Nunito
+testbutton.Text = "test"
+testbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton.TextScaled = true
+testbutton.TextSize = 14.000
+testbutton.TextWrapped = true
+
+testbutton_2.Name = "testbutton"
+testbutton_2.Parent = ButtonHolder
+testbutton_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_2.Position = UDim2.new(0.266666651, 0, 0.292344123, 0)
+testbutton_2.Size = UDim2.new(0, 86, 0, 37)
+testbutton_2.Font = Enum.Font.Nunito
+testbutton_2.Text = "test"
+testbutton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_2.TextScaled = true
+testbutton_2.TextSize = 14.000
+testbutton_2.TextWrapped = true
+
+testbutton_3.Name = "testbutton"
+testbutton_3.Parent = ButtonHolder
+testbutton_3.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_3.Position = UDim2.new(0.266666651, 0, 0.292344123, 0)
+testbutton_3.Size = UDim2.new(0, 86, 0, 37)
+testbutton_3.Font = Enum.Font.Nunito
+testbutton_3.Text = "test"
+testbutton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_3.TextScaled = true
+testbutton_3.TextSize = 14.000
+testbutton_3.TextWrapped = true
+
+testbutton_4.Name = "testbutton"
+testbutton_4.Parent = ButtonHolder
+testbutton_4.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_4.Position = UDim2.new(0.503225803, 0, 0.292344123, 0)
+testbutton_4.Size = UDim2.new(0, 86, 0, 37)
+testbutton_4.Font = Enum.Font.Nunito
+testbutton_4.Text = "test"
+testbutton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_4.TextScaled = true
+testbutton_4.TextSize = 14.000
+testbutton_4.TextWrapped = true
+
+testbutton_5.Name = "testbutton"
+testbutton_5.Parent = ButtonHolder
+testbutton_5.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_5.Position = UDim2.new(0.733333349, 0, 0.292344123, 0)
+testbutton_5.Size = UDim2.new(0, 86, 0, 37)
+testbutton_5.Font = Enum.Font.Nunito
+testbutton_5.Text = "test"
+testbutton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_5.TextScaled = true
+testbutton_5.TextSize = 14.000
+testbutton_5.TextWrapped = true
+
+testbutton_6.Name = "testbutton"
+testbutton_6.Parent = ButtonHolder
+testbutton_6.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_6.Position = UDim2.new(0.733333349, 0, 0.217425555, 0)
+testbutton_6.Size = UDim2.new(0, 86, 0, 37)
+testbutton_6.Font = Enum.Font.Nunito
+testbutton_6.Text = "test"
+testbutton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_6.TextScaled = true
+testbutton_6.TextSize = 14.000
+testbutton_6.TextWrapped = true
+
+testbutton_7.Name = "testbutton"
+testbutton_7.Parent = ButtonHolder
+testbutton_7.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_7.Position = UDim2.new(0.503225803, 0, 0.217425555, 0)
+testbutton_7.Size = UDim2.new(0, 86, 0, 37)
+testbutton_7.Font = Enum.Font.Nunito
+testbutton_7.Text = "test"
+testbutton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_7.TextScaled = true
+testbutton_7.TextSize = 14.000
+testbutton_7.TextWrapped = true
+
+testbutton_8.Name = "testbutton"
+testbutton_8.Parent = ButtonHolder
+testbutton_8.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_8.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_8.Position = UDim2.new(0.266666651, 0, 0.217425555, 0)
+testbutton_8.Size = UDim2.new(0, 86, 0, 37)
+testbutton_8.Font = Enum.Font.Nunito
+testbutton_8.Text = "test"
+testbutton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_8.TextScaled = true
+testbutton_8.TextSize = 14.000
+testbutton_8.TextWrapped = true
+
+testbutton_9.Name = "testbutton"
+testbutton_9.Parent = ButtonHolder
+testbutton_9.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_9.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_9.Position = UDim2.new(0.0301075131, 0, 0.217425555, 0)
+testbutton_9.Size = UDim2.new(0, 86, 0, 37)
+testbutton_9.Font = Enum.Font.Nunito
+testbutton_9.Text = "test"
+testbutton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_9.TextScaled = true
+testbutton_9.TextSize = 14.000
+testbutton_9.TextWrapped = true
+
+testbutton_10.Name = "testbutton"
+testbutton_10.Parent = ButtonHolder
+testbutton_10.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_10.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_10.Position = UDim2.new(0.0301075131, 0, 0.142506987, 0)
+testbutton_10.Size = UDim2.new(0, 86, 0, 37)
+testbutton_10.Font = Enum.Font.Nunito
+testbutton_10.Text = "test"
+testbutton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_10.TextScaled = true
+testbutton_10.TextSize = 14.000
+testbutton_10.TextWrapped = true
+
+testbutton_11.Name = "testbutton"
+testbutton_11.Parent = ButtonHolder
+testbutton_11.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_11.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_11.Position = UDim2.new(0.266666651, 0, 0.142506987, 0)
+testbutton_11.Size = UDim2.new(0, 86, 0, 37)
+testbutton_11.Font = Enum.Font.Nunito
+testbutton_11.Text = "test"
+testbutton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_11.TextScaled = true
+testbutton_11.TextSize = 14.000
+testbutton_11.TextWrapped = true
+
+testbutton_12.Name = "testbutton"
+testbutton_12.Parent = ButtonHolder
+testbutton_12.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_12.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_12.Position = UDim2.new(0.503225803, 0, 0.142506987, 0)
+testbutton_12.Size = UDim2.new(0, 86, 0, 37)
+testbutton_12.Font = Enum.Font.Nunito
+testbutton_12.Text = "test"
+testbutton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_12.TextScaled = true
+testbutton_12.TextSize = 14.000
+testbutton_12.TextWrapped = true
+
+testbutton_13.Name = "testbutton"
+testbutton_13.Parent = ButtonHolder
+testbutton_13.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_13.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_13.Position = UDim2.new(0.733333349, 0, 0.142506987, 0)
+testbutton_13.Size = UDim2.new(0, 86, 0, 37)
+testbutton_13.Font = Enum.Font.Nunito
+testbutton_13.Text = "test"
+testbutton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_13.TextScaled = true
+testbutton_13.TextSize = 14.000
+testbutton_13.TextWrapped = true
+
+testbutton_14.Name = "testbutton"
+testbutton_14.Parent = ButtonHolder
+testbutton_14.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_14.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_14.Position = UDim2.new(0.733333349, 0, 0.070845753, 0)
+testbutton_14.Size = UDim2.new(0, 86, 0, 37)
+testbutton_14.Font = Enum.Font.Nunito
+testbutton_14.Text = "test"
+testbutton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_14.TextScaled = true
+testbutton_14.TextSize = 14.000
+testbutton_14.TextWrapped = true
+
+testbutton_15.Name = "testbutton"
+testbutton_15.Parent = ButtonHolder
+testbutton_15.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_15.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_15.Position = UDim2.new(0.503225803, 0, 0.070845753, 0)
+testbutton_15.Size = UDim2.new(0, 86, 0, 37)
+testbutton_15.Font = Enum.Font.Nunito
+testbutton_15.Text = "test"
+testbutton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_15.TextScaled = true
+testbutton_15.TextSize = 14.000
+testbutton_15.TextWrapped = true
+
+testbutton_16.Name = "testbutton"
+testbutton_16.Parent = ButtonHolder
+testbutton_16.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_16.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_16.Position = UDim2.new(0.266666681, 0, 0.070845753, 0)
+testbutton_16.Size = UDim2.new(0, 86, 0, 37)
+testbutton_16.Font = Enum.Font.Nunito
+testbutton_16.Text = "test"
+testbutton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_16.TextScaled = true
+testbutton_16.TextSize = 14.000
+testbutton_16.TextWrapped = true
+
+button1.Name = "button1"
+button1.Parent = ButtonHolder
+button1.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+button1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+button1.Position = UDim2.new(0.030107528, 0, 0.070845753, 0)
+button1.Size = UDim2.new(0, 86, 0, 37)
+button1.Font = Enum.Font.Nunito
+button1.Text = "game hub script info test"
+button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+button1.TextScaled = true
+button1.TextSize = 14.000
+button1.TextWrapped = true
+
+UIGridLayout.Parent = ButtonHolder
+UIGridLayout.CellPadding = UDim2.new(0, 6, 0, 10)
+UIGridLayout.CellSize = UDim2.new(0, 86, 0, 37)
+
+Selections.Name = "Selections"
+Selections.Parent = gamehubpage
+Selections.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Selections.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Selections.Size = UDim2.new(0, 465, 0, 33)
+
+mostplayed.Name = "mostplayed"
+mostplayed.Parent = Selections
+mostplayed.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+mostplayed.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mostplayed.Position = UDim2.new(0.0709677413, 0, 0.134671301, 0)
+mostplayed.Size = UDim2.new(0, 95, 0, 24)
+mostplayed.Font = Enum.Font.Nunito
+mostplayed.Text = "Most Played"
+mostplayed.TextColor3 = Color3.fromRGB(255, 255, 255)
+mostplayed.TextScaled = true
+mostplayed.TextSize = 14.000
+mostplayed.TextWrapped = true
+
+mostpopular.Name = "mostpopular"
+mostpopular.Parent = Selections
+mostpopular.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+mostpopular.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mostpopular.Position = UDim2.new(0.722580612, 0, 0.134671301, 0)
+mostpopular.Size = UDim2.new(0, 95, 0, 24)
+mostpopular.Font = Enum.Font.Nunito
+mostpopular.Text = "Most Popular"
+mostpopular.TextColor3 = Color3.fromRGB(255, 255, 255)
+mostpopular.TextScaled = true
+mostpopular.TextSize = 14.000
+mostpopular.TextWrapped = true
+
+mostrating.Name = "mostrating"
+mostrating.Parent = Selections
+mostrating.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+mostrating.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mostrating.Position = UDim2.new(0.505376339, 0, 0.134671301, 0)
+mostrating.Size = UDim2.new(0, 95, 0, 24)
+mostrating.Font = Enum.Font.Nunito
+mostrating.Text = "Most Script Ratings"
+mostrating.TextColor3 = Color3.fromRGB(255, 255, 255)
+mostrating.TextScaled = true
+mostrating.TextSize = 14.000
+mostrating.TextWrapped = true
+
+mostused.Name = "mostused"
+mostused.Parent = Selections
+mostused.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+mostused.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mostused.Position = UDim2.new(0.288172036, 0, 0.134671301, 0)
+mostused.Size = UDim2.new(0, 95, 0, 24)
+mostused.Font = Enum.Font.Nunito
+mostused.Text = "Most Used Scripts"
+mostused.TextColor3 = Color3.fromRGB(255, 255, 255)
+mostused.TextScaled = true
+mostused.TextSize = 14.000
+mostused.TextWrapped = true
+
+next.Name = "next"
+next.Parent = Selections
+next.BackgroundTransparency = 1.000
+next.Position = UDim2.new(0.926881552, 0, -0.0151515007, 0)
+next.Size = UDim2.new(0, 33, 0, 33)
+next.ZIndex = 2
+next.Image = "rbxassetid://3926305904"
+next.ImageRectOffset = Vector2.new(964, 284)
+next.ImageRectSize = Vector2.new(36, 36)
+
+back.Name = "back"
+back.Parent = Selections
+back.BackgroundTransparency = 1.000
+back.Position = UDim2.new(-0.00107526779, 0, -0.016843766, 0)
+back.Size = UDim2.new(0, 33, 0, 33)
+back.ZIndex = 2
+back.Image = "rbxassetid://3926305904"
+back.ImageRectOffset = Vector2.new(724, 284)
+back.ImageRectSize = Vector2.new(36, 36)
+
+testing1.Name = "testing1"
+testing1.Parent = Selections
+testing1.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing1.Position = UDim2.new(0.0709677413, 0, 0.134671301, 0)
+testing1.Size = UDim2.new(0, 95, 0, 24)
+testing1.Visible = false
+testing1.Font = Enum.Font.Nunito
+testing1.Text = "test"
+testing1.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing1.TextScaled = true
+testing1.TextSize = 14.000
+testing1.TextWrapped = true
+
+testing2.Name = "testing2"
+testing2.Parent = Selections
+testing2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing2.Position = UDim2.new(0.722580612, 0, 0.134671301, 0)
+testing2.Size = UDim2.new(0, 95, 0, 24)
+testing2.Visible = false
+testing2.Font = Enum.Font.Nunito
+testing2.Text = "test"
+testing2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing2.TextScaled = true
+testing2.TextSize = 14.000
+testing2.TextWrapped = true
+
+testing3.Name = "testing3"
+testing3.Parent = Selections
+testing3.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing3.Position = UDim2.new(0.505376339, 0, 0.134671301, 0)
+testing3.Size = UDim2.new(0, 95, 0, 24)
+testing3.Visible = false
+testing3.Font = Enum.Font.Nunito
+testing3.Text = "test"
+testing3.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing3.TextScaled = true
+testing3.TextSize = 14.000
+testing3.TextWrapped = true
+
+testing4.Name = "testing4"
+testing4.Parent = Selections
+testing4.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing4.Position = UDim2.new(0.288172036, 0, 0.134671301, 0)
+testing4.Size = UDim2.new(0, 95, 0, 24)
+testing4.Visible = false
+testing4.Font = Enum.Font.Nunito
+testing4.Text = "test"
+testing4.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing4.TextScaled = true
+testing4.TextSize = 14.000
+testing4.TextWrapped = true
+
+mischubpage.Name = "mischubpage"
+mischubpage.Parent = mainframe
+mischubpage.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+mischubpage.BackgroundTransparency = 1.000
+mischubpage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+mischubpage.Position = UDim2.new(0.179649994, 0, 0.0860534161, 0)
+mischubpage.Size = UDim2.new(0, 465, 0, 307)
+mischubpage.Visible = false
+mischubpage.ZIndex = 0
+
+ButtonHolder_2.Name = "ButtonHolder"
+ButtonHolder_2.Parent = mischubpage
+ButtonHolder_2.Active = true
+ButtonHolder_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ButtonHolder_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ButtonHolder_2.Position = UDim2.new(0, 0, 0.107491858, 0)
+ButtonHolder_2.Size = UDim2.new(0, 465, 0, 275)
+
+testbutton_17.Name = "testbutton"
+testbutton_17.Parent = ButtonHolder_2
+testbutton_17.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_17.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_17.Position = UDim2.new(0.0301075131, 0, 0.292344123, 0)
+testbutton_17.Size = UDim2.new(0, 86, 0, 37)
+testbutton_17.Font = Enum.Font.Nunito
+testbutton_17.Text = "test"
+testbutton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_17.TextScaled = true
+testbutton_17.TextSize = 14.000
+testbutton_17.TextWrapped = true
+
+testbutton_18.Name = "testbutton"
+testbutton_18.Parent = ButtonHolder_2
+testbutton_18.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_18.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_18.Position = UDim2.new(0.266666651, 0, 0.292344123, 0)
+testbutton_18.Size = UDim2.new(0, 86, 0, 37)
+testbutton_18.Font = Enum.Font.Nunito
+testbutton_18.Text = "test"
+testbutton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_18.TextScaled = true
+testbutton_18.TextSize = 14.000
+testbutton_18.TextWrapped = true
+
+testbutton_19.Name = "testbutton"
+testbutton_19.Parent = ButtonHolder_2
+testbutton_19.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_19.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_19.Position = UDim2.new(0.266666651, 0, 0.292344123, 0)
+testbutton_19.Size = UDim2.new(0, 86, 0, 37)
+testbutton_19.Font = Enum.Font.Nunito
+testbutton_19.Text = "test"
+testbutton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_19.TextScaled = true
+testbutton_19.TextSize = 14.000
+testbutton_19.TextWrapped = true
+
+testbutton_20.Name = "testbutton"
+testbutton_20.Parent = ButtonHolder_2
+testbutton_20.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_20.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_20.Position = UDim2.new(0.503225803, 0, 0.292344123, 0)
+testbutton_20.Size = UDim2.new(0, 86, 0, 37)
+testbutton_20.Font = Enum.Font.Nunito
+testbutton_20.Text = "test"
+testbutton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_20.TextScaled = true
+testbutton_20.TextSize = 14.000
+testbutton_20.TextWrapped = true
+
+testbutton_21.Name = "testbutton"
+testbutton_21.Parent = ButtonHolder_2
+testbutton_21.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_21.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_21.Position = UDim2.new(0.733333349, 0, 0.292344123, 0)
+testbutton_21.Size = UDim2.new(0, 86, 0, 37)
+testbutton_21.Font = Enum.Font.Nunito
+testbutton_21.Text = "test"
+testbutton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_21.TextScaled = true
+testbutton_21.TextSize = 14.000
+testbutton_21.TextWrapped = true
+
+testbutton_22.Name = "testbutton"
+testbutton_22.Parent = ButtonHolder_2
+testbutton_22.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_22.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_22.Position = UDim2.new(0.733333349, 0, 0.217425555, 0)
+testbutton_22.Size = UDim2.new(0, 86, 0, 37)
+testbutton_22.Font = Enum.Font.Nunito
+testbutton_22.Text = "test"
+testbutton_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_22.TextScaled = true
+testbutton_22.TextSize = 14.000
+testbutton_22.TextWrapped = true
+
+testbutton_23.Name = "testbutton"
+testbutton_23.Parent = ButtonHolder_2
+testbutton_23.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_23.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_23.Position = UDim2.new(0.503225803, 0, 0.217425555, 0)
+testbutton_23.Size = UDim2.new(0, 86, 0, 37)
+testbutton_23.Font = Enum.Font.Nunito
+testbutton_23.Text = "test"
+testbutton_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_23.TextScaled = true
+testbutton_23.TextSize = 14.000
+testbutton_23.TextWrapped = true
+
+testbutton_24.Name = "testbutton"
+testbutton_24.Parent = ButtonHolder_2
+testbutton_24.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_24.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_24.Position = UDim2.new(0.266666651, 0, 0.217425555, 0)
+testbutton_24.Size = UDim2.new(0, 86, 0, 37)
+testbutton_24.Font = Enum.Font.Nunito
+testbutton_24.Text = "test"
+testbutton_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_24.TextScaled = true
+testbutton_24.TextSize = 14.000
+testbutton_24.TextWrapped = true
+
+testbutton_25.Name = "testbutton"
+testbutton_25.Parent = ButtonHolder_2
+testbutton_25.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_25.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_25.Position = UDim2.new(0.0301075131, 0, 0.217425555, 0)
+testbutton_25.Size = UDim2.new(0, 86, 0, 37)
+testbutton_25.Font = Enum.Font.Nunito
+testbutton_25.Text = "test"
+testbutton_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_25.TextScaled = true
+testbutton_25.TextSize = 14.000
+testbutton_25.TextWrapped = true
+
+testbutton_26.Name = "testbutton"
+testbutton_26.Parent = ButtonHolder_2
+testbutton_26.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_26.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_26.Position = UDim2.new(0.0301075131, 0, 0.142506987, 0)
+testbutton_26.Size = UDim2.new(0, 86, 0, 37)
+testbutton_26.Font = Enum.Font.Nunito
+testbutton_26.Text = "test"
+testbutton_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_26.TextScaled = true
+testbutton_26.TextSize = 14.000
+testbutton_26.TextWrapped = true
+
+testbutton_27.Name = "testbutton"
+testbutton_27.Parent = ButtonHolder_2
+testbutton_27.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_27.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_27.Position = UDim2.new(0.266666651, 0, 0.142506987, 0)
+testbutton_27.Size = UDim2.new(0, 86, 0, 37)
+testbutton_27.Font = Enum.Font.Nunito
+testbutton_27.Text = "test"
+testbutton_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_27.TextScaled = true
+testbutton_27.TextSize = 14.000
+testbutton_27.TextWrapped = true
+
+testbutton_28.Name = "testbutton"
+testbutton_28.Parent = ButtonHolder_2
+testbutton_28.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_28.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_28.Position = UDim2.new(0.503225803, 0, 0.142506987, 0)
+testbutton_28.Size = UDim2.new(0, 86, 0, 37)
+testbutton_28.Font = Enum.Font.Nunito
+testbutton_28.Text = "test"
+testbutton_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_28.TextScaled = true
+testbutton_28.TextSize = 14.000
+testbutton_28.TextWrapped = true
+
+testbutton_29.Name = "testbutton"
+testbutton_29.Parent = ButtonHolder_2
+testbutton_29.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_29.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_29.Position = UDim2.new(0.733333349, 0, 0.142506987, 0)
+testbutton_29.Size = UDim2.new(0, 86, 0, 37)
+testbutton_29.Font = Enum.Font.Nunito
+testbutton_29.Text = "test"
+testbutton_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_29.TextScaled = true
+testbutton_29.TextSize = 14.000
+testbutton_29.TextWrapped = true
+
+testbutton_30.Name = "testbutton"
+testbutton_30.Parent = ButtonHolder_2
+testbutton_30.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_30.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_30.Position = UDim2.new(0.733333349, 0, 0.070845753, 0)
+testbutton_30.Size = UDim2.new(0, 86, 0, 37)
+testbutton_30.Font = Enum.Font.Nunito
+testbutton_30.Text = "test"
+testbutton_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_30.TextScaled = true
+testbutton_30.TextSize = 14.000
+testbutton_30.TextWrapped = true
+
+testbutton_31.Name = "testbutton"
+testbutton_31.Parent = ButtonHolder_2
+testbutton_31.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_31.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_31.Position = UDim2.new(0.503225803, 0, 0.070845753, 0)
+testbutton_31.Size = UDim2.new(0, 86, 0, 37)
+testbutton_31.Font = Enum.Font.Nunito
+testbutton_31.Text = "test"
+testbutton_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_31.TextScaled = true
+testbutton_31.TextSize = 14.000
+testbutton_31.TextWrapped = true
+
+testbutton_32.Name = "testbutton"
+testbutton_32.Parent = ButtonHolder_2
+testbutton_32.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testbutton_32.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_32.Position = UDim2.new(0.266666681, 0, 0.070845753, 0)
+testbutton_32.Size = UDim2.new(0, 86, 0, 37)
+testbutton_32.Font = Enum.Font.Nunito
+testbutton_32.Text = "test"
+testbutton_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+testbutton_32.TextScaled = true
+testbutton_32.TextSize = 14.000
+testbutton_32.TextWrapped = true
+
+button1_2.Name = "button1"
+button1_2.Parent = ButtonHolder_2
+button1_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+button1_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+button1_2.Position = UDim2.new(0.030107528, 0, 0.070845753, 0)
+button1_2.Size = UDim2.new(0, 86, 0, 37)
+button1_2.Font = Enum.Font.Nunito
+button1_2.Text = "game hub script info test"
+button1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+button1_2.TextScaled = true
+button1_2.TextSize = 14.000
+button1_2.TextWrapped = true
+
+UIGridLayout_2.Parent = ButtonHolder_2
+UIGridLayout_2.CellPadding = UDim2.new(0, 6, 0, 10)
+UIGridLayout_2.CellSize = UDim2.new(0, 86, 0, 37)
+
+Selections_2.Name = "Selections"
+Selections_2.Parent = mischubpage
+Selections_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Selections_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Selections_2.Size = UDim2.new(0, 465, 0, 33)
+
+testop1.Name = "testop1"
+testop1.Parent = Selections_2
+testop1.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testop1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testop1.Position = UDim2.new(0.0709677413, 0, 0.134671301, 0)
+testop1.Size = UDim2.new(0, 95, 0, 24)
+testop1.Font = Enum.Font.Nunito
+testop1.Text = "N/A"
+testop1.TextColor3 = Color3.fromRGB(255, 255, 255)
+testop1.TextScaled = true
+testop1.TextSize = 14.000
+testop1.TextWrapped = true
+
+testop2.Name = "testop2"
+testop2.Parent = Selections_2
+testop2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testop2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testop2.Position = UDim2.new(0.722580612, 0, 0.134671301, 0)
+testop2.Size = UDim2.new(0, 95, 0, 24)
+testop2.Font = Enum.Font.Nunito
+testop2.Text = "N/A"
+testop2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testop2.TextScaled = true
+testop2.TextSize = 14.000
+testop2.TextWrapped = true
+
+testop3.Name = "testop3"
+testop3.Parent = Selections_2
+testop3.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testop3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testop3.Position = UDim2.new(0.505376339, 0, 0.134671301, 0)
+testop3.Size = UDim2.new(0, 95, 0, 24)
+testop3.Font = Enum.Font.Nunito
+testop3.Text = "N/A"
+testop3.TextColor3 = Color3.fromRGB(255, 255, 255)
+testop3.TextScaled = true
+testop3.TextSize = 14.000
+testop3.TextWrapped = true
+
+testop4.Name = "testop4"
+testop4.Parent = Selections_2
+testop4.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testop4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testop4.Position = UDim2.new(0.288172036, 0, 0.134671301, 0)
+testop4.Size = UDim2.new(0, 95, 0, 24)
+testop4.Font = Enum.Font.Nunito
+testop4.Text = "N/A"
+testop4.TextColor3 = Color3.fromRGB(255, 255, 255)
+testop4.TextScaled = true
+testop4.TextSize = 14.000
+testop4.TextWrapped = true
+
+next_2.Name = "next"
+next_2.Parent = Selections_2
+next_2.BackgroundTransparency = 1.000
+next_2.Position = UDim2.new(0.926881552, 0, -0.0151515007, 0)
+next_2.Size = UDim2.new(0, 33, 0, 33)
+next_2.ZIndex = 2
+next_2.Image = "rbxassetid://3926305904"
+next_2.ImageRectOffset = Vector2.new(964, 284)
+next_2.ImageRectSize = Vector2.new(36, 36)
+
+back_2.Name = "back"
+back_2.Parent = Selections_2
+back_2.BackgroundTransparency = 1.000
+back_2.Position = UDim2.new(-0.00107526779, 0, -0.016843766, 0)
+back_2.Size = UDim2.new(0, 33, 0, 33)
+back_2.ZIndex = 2
+back_2.Image = "rbxassetid://3926305904"
+back_2.ImageRectOffset = Vector2.new(724, 284)
+back_2.ImageRectSize = Vector2.new(36, 36)
+
+testing1_2.Name = "testing1"
+testing1_2.Parent = Selections_2
+testing1_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing1_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing1_2.Position = UDim2.new(0.0709677413, 0, 0.134671301, 0)
+testing1_2.Size = UDim2.new(0, 95, 0, 24)
+testing1_2.Visible = false
+testing1_2.Font = Enum.Font.Nunito
+testing1_2.Text = "test"
+testing1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing1_2.TextScaled = true
+testing1_2.TextSize = 14.000
+testing1_2.TextWrapped = true
+
+testing2_2.Name = "testing2"
+testing2_2.Parent = Selections_2
+testing2_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing2_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing2_2.Position = UDim2.new(0.722580612, 0, 0.134671301, 0)
+testing2_2.Size = UDim2.new(0, 95, 0, 24)
+testing2_2.Visible = false
+testing2_2.Font = Enum.Font.Nunito
+testing2_2.Text = "test"
+testing2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing2_2.TextScaled = true
+testing2_2.TextSize = 14.000
+testing2_2.TextWrapped = true
+
+testing3_2.Name = "testing3"
+testing3_2.Parent = Selections_2
+testing3_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing3_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing3_2.Position = UDim2.new(0.505376339, 0, 0.134671301, 0)
+testing3_2.Size = UDim2.new(0, 95, 0, 24)
+testing3_2.Visible = false
+testing3_2.Font = Enum.Font.Nunito
+testing3_2.Text = "test"
+testing3_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing3_2.TextScaled = true
+testing3_2.TextSize = 14.000
+testing3_2.TextWrapped = true
+
+testing4_2.Name = "testing4"
+testing4_2.Parent = Selections_2
+testing4_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+testing4_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+testing4_2.Position = UDim2.new(0.288172036, 0, 0.134671301, 0)
+testing4_2.Size = UDim2.new(0, 95, 0, 24)
+testing4_2.Visible = false
+testing4_2.Font = Enum.Font.Nunito
+testing4_2.Text = "test"
+testing4_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+testing4_2.TextScaled = true
+testing4_2.TextSize = 14.000
+testing4_2.TextWrapped = true
+
+-- Scripts:
+
+local function ISPVI_fake_script() -- infernox.ScriptHandler 
+	local script = Instance.new('LocalScript', infernox)
+
+	local maingui = script.Parent.mainframe
+	local titlebar = maingui.titlebar
+	local home = maingui.homepage
+	local mischub = maingui.mischubpage
+	local gamehub = maingui.gamehubpage
+	local whitelistpage = maingui.whitelistpage
+	local sidebar = maingui.sidebar
+	local homeopen = sidebar.homeopen
+	local mischubopen = sidebar.mischubopen
+	local gamehubopen = sidebar.gamehubopen
+	local settingspage = maingui.settingspage
+	local settingsopen = sidebar.settingsopen
+	local changelogopen = sidebar.changelogopen
+	local changelogpage = maingui.changelogpage
+	local ghbutton = maingui.gamehubpage.ButtonHolder.button1
+	local mhbutton = maingui.mischubpage.ButtonHolder.button1
+	local scriptinfopage = maingui.scriptinfopage
+	local whitelistcheck = whitelistpage.checkwhitelist
+	local status = whitelistpage.status
+	local selections = gamehub.Selections
+	local testing1 = selections.testing1
+	local testing2 = selections.testing2
+	local testing3 = selections.testing3
+	local testing4 = selections.testing4
+	local mostplayed = selections.mostplayed
+	local mostpopular = selections.mostpopular
+	local mostrating = selections.mostrating
+	local mostused = selections.mostused
+	
+	maingui.Visible = true
+	whitelistpage.Visible = true
+	homeopen.Visible = false
+	mischubopen.Visible = false
+	settingsopen.Visible = false
+	gamehubopen.Visible = false
+	changelogopen.Visible = false
+	selections.back.Visible = false
+	
+	
+	local open = false
+	
+	local UIS = game:GetService("UserInputService")
+	
+	UIS.InputBegan:Connect(function(keyCode)
+		if keyCode.keyCode == Enum.KeyCode.RightShift then
+			if open then
+				maingui.Visible = true
+				open = false
+			else
+				open = true
+				maingui.Visible = false
+			end
+		end
+	end)
+	
+	homeopen.MouseButton1Click:Connect(function()
+		home.Visible = true
+		mischub.Visible = false
+		settingspage.Visible = false
+		gamehub.Visible = false
+		changelogpage.Visible = false
+		homeopen.BorderSizePixel = 1
+		mischubopen.BorderSizePixel = 0
+		gamehubopen.BorderSizePixel = 0
+		settingsopen.BorderSizePixel = 0
+		changelogopen.BorderSizePixel = 0
+	end)
+	
+	mischubopen.MouseButton1Click:Connect(function()
+		home.Visible = false
+		mischub.Visible = true
+		settingspage.Visible = false
+		gamehub.Visible = false
+		changelogpage.Visible = false
+		homeopen.BorderSizePixel = 0
+		mischubopen.BorderSizePixel = 1
+		gamehubopen.BorderSizePixel = 0
+		settingsopen.BorderSizePixel = 0
+		changelogopen.BorderSizePixel = 0
+	end)
+	
+	gamehubopen.MouseButton1Click:Connect(function()
+		home.Visible = false
+		mischub.Visible = false
+		settingspage.Visible = false
+		gamehub.Visible = true
+		changelogpage.Visible = false
+		homeopen.BorderSizePixel = 0
+		mischubopen.BorderSizePixel = 0
+		gamehubopen.BorderSizePixel = 1
+		settingsopen.BorderSizePixel = 0
+		changelogopen.BorderSizePixel = 0
+	end)
+	
+	settingsopen.MouseButton1Click:Connect(function()
+		home.Visible = false
+		mischub.Visible = false
+		settingspage.Visible = true
+		gamehub.Visible = false
+		changelogpage.Visible = false
+		homeopen.BorderSizePixel = 0
+		mischubopen.BorderSizePixel = 0
+		gamehubopen.BorderSizePixel = 0
+		settingsopen.BorderSizePixel = 1
+		changelogopen.BorderSizePixel = 0
+	end)
+	
+	changelogopen.MouseButton1Click:Connect(function()
+		home.Visible = false
+		mischub.Visible = false
+		settingspage.Visible = false
+		gamehub.Visible = false
+		changelogpage.Visible = true
+		homeopen.BorderSizePixel = 0
+		mischubopen.BorderSizePixel = 0
+		gamehubopen.BorderSizePixel = 0
+		settingsopen.BorderSizePixel = 0
+		changelogopen.BorderSizePixel = 1
+	end)
+	
+	ghbutton.MouseButton1Click:Connect(function()
+		scriptinfopage.Visible = true
+	end)
+	
+	mhbutton.MouseButton1Click:Connect(function()
+		scriptinfopage.Visible = true
+	end)
+	
+	scriptinfopage.executebutton.MouseButton1Click:Connect(function()
+		scriptinfopage.Visible = false
+	end)
+	
+	scriptinfopage.scriptpicture.MouseButton1Click:Connect(function()
+		scriptinfopage.scriptpicturezoomed.Visible = true
+		scriptinfopage.background.Visible = true
+	end)
+	
+	scriptinfopage.scriptpicturezoomed.MouseButton1Click:Connect(function()
+		scriptinfopage.scriptpicturezoomed.Visible = false
+		scriptinfopage.background.Visible = false
+	end)
+	
+	selections.next.MouseButton1Click:Connect(function()
+		testing1.Visible = true
+		testing2.Visible = true
+		testing3.Visible = true
+		testing4.Visible = true
+		selections.back.Visible = true
+		selections.next.Visible = false
+		mostplayed.Visible = false
+		mostpopular.Visible = false
+		mostrating.Visible = false
+		mostused.Visible = false
+	end)
+	
+	selections.back.MouseButton1Click:Connect(function()
+		testing1.Visible = false
+		testing2.Visible = false
+		testing3.Visible = false
+		testing4.Visible = false
+		selections.back.Visible = false
+		selections.next.Visible = true
+		mostplayed.Visible = true
+		mostpopular.Visible = true
+		mostrating.Visible = true
+		mostused.Visible = true
+	end)
+	
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(maingui)
+end
+coroutine.wrap(ISPVI_fake_script)()
