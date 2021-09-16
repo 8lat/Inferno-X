@@ -1,7 +1,8 @@
-local whitelist = {
+local AllowedPlayers = {
 	"Reset34136000"; -- Co-Founder
 	"Iceelus"; -- Founder
 	"Vephinox"; -- Head of Administration
-	"QuantumPsycheL"; -- Alt
-	"bygbyg"; -- Community Manager
+	"QuantumPsycheL"; -- Community Manager
+	"bygbyg"; -- Iceelus Alt
+	"sebbe21"; -- Iceelus Alt
 }
