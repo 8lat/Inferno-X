@@ -1,7 +1,7 @@
 local whitelist = {
-	"Reset34136000", -- Co-Founder
-	"Iceelus", -- Founder
-	"Vephinox", -- Head of Administration
-	"QuantumPsycheL", -- Alt
-	"bygbyg" -- Community Manager
-};
+	"Reset34136000"; -- Co-Founder
+	"Iceelus"; -- Founder
+	"Vephinox"; -- Head of Administration
+	"QuantumPsycheL"; -- Alt
+	"bygbyg"; -- Community Manager
+}
