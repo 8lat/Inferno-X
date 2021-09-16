@@ -1,4 +1,4 @@
-local AllowedPlayers = {
+_G.AllowedPlayers = {
 	"Reset34136000"; -- Co-Founder
 	"Iceelus"; -- Founder
 	"Vephinox"; -- Head of Administration
