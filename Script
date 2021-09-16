@@ -1,1 +1,1 @@
-local Explanation = "In here the obfuscated Inferno X script will be listed."
+print("In here the obfuscated Inferno X script will be listed.")
