@@ -1,4 +1,4 @@
-local Allowed = {
+_G.Allowed = {
     "Reset34136000"; -- Co-Founder
     "Iceelus"; -- Founder
     "Vephinox"; -- Head of Administration
@@ -8,13 +8,13 @@ local Allowed = {
     "Jxnttt" -- helped make this stupid script
 }
 
-local Usernames = {
+_G.Usernames = {
     "Jxnt";
     "Ice";
     "Quantum";
 }
 
-local Passwords = {
+_G.Passwords = {
     "bs8145b178vn1295n27bs";
     "gy3v7v7b213zlas8cv7ba";
     "73bv7g3bv91bbjflaijdg";
