@@ -1,7 +1,7 @@
 -- Total users whitelisted: 7
 
 _G.Allowed = {
-    "Reset34136000"; -- Co-Founder
+    "Reset3413600"; -- Co-Founder
     "Iceelus"; -- Founder
     "Vephinox"; -- Head of Administration
     "QuantumPsycheL"; -- Community Manager
