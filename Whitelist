@@ -7,7 +7,8 @@ _G.Allowed = {
     "QuantumPsycheL"; -- Community Manager
     "bygbyg"; -- Iceelus Alt
     "sebbe21"; -- Iceelus Alt
-    "Jxnttt" -- helped with whitelist
+    "Jxnttt"; -- helped with whitelist
+    "x_myguy";
 }
 
 _G.Usernames = {
