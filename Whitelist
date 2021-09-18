@@ -1,12 +1,12 @@
 -- Total users whitelisted: 7
 
-_G.Allowed = {
-    "Reset34136000"; -- Co-Founder
+_G.Whitelisted = {
     "Iceelus"; -- Founder
+    "Reset34136000"; -- Co-Founder
     "Vephinox"; -- Head of Administration
     "QuantumPsycheL"; -- Community Manager
     "bygbyg"; -- Iceelus Alt
     "sebbe21"; -- Iceelus Alt
-    "Jxnttt"; -- helped with whitelist
+    "Jxnttt"; -- Whitelist Helper
     "x_myguy"; -- Server Booster
 }
