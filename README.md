@@ -1,1 +1,1 @@
-Editable Inferno X Whitelist & Obfuscated Script to make it easier for adding/removing users from the script and making updates.
+<B>Extremely</b> old ROBLOX 'script hub'. Made this with a partner about 5 years ago, never used it again. I'm not on ROBLOX anymore, so do whatever you want with this.
